@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400');
+body {
+	font-family: 'Source Sans Pro', sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif !important;
+	min-height: 400vh
+}
+.aos-animate{
+	transition: all 1s !important;
+}
+.banner .parallax-container{
+	min-height: 100vh;
+	box-shadow: 1px 1px 23px 0 rgba(0,0,0,.6);
+}
+.banner .parallax img{
+	filter: brightness(80%);
+	width: 100%;
+}
+.nav ul li{
+	display: inline-block;
+	box-shadow: initial;
+}
+.nav .logo-img{
+	margin-top: -10px;
+	width: 70px;
+}
+.banner a, .banner{
+	color: white;
+}
+.banner-content{
+	margin-top: 100px;
+}
+.action{
+	display: inline-block;
+	margin: 50px;
+	padding: 15px 20px;
+	font-size: 1.5rem;
+	border: 2px solid white;
+	border-radius: 5px;
+}
+.nav ul li a{
+	padding: 10px;
+	font-size: 1.5rem;
+}
+.showcase{
+	position: relative;
+	margin-top: 70px;
+}
+.showcase-img img{
+	position: absolute;
+	max-width: 500px;
+	box-shadow: 1px 2px 53px 0 rgba(0,0,0,.25);
+	filter: brightness(80%)
+}
+.showcase-img img.second{
+	top: 70px;
+	left: 500px;
+	z-index: 2;
+}
+.showcase-img img.first{
+	left: 50px;
+	top: 100px;
+	transform: rotate(-30deg);
+	z-index: 1;
+}
+.showcase-img img.third{
+	top: 100px;
+	left: 220px;
+	z-index: 3;
+}
+.showcase-img img.fourth{
+	top: 60px;
+	left: 720px;
+	z-index: 4;
+	transform: rotate(10deg);
+}
+.showcase-img img.fifth{
+	top: 80px;
+	right: 120px;
+	z-index: 3;
+}

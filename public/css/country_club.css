@@ -1,0 +1,225 @@
+
+@import url('https://fonts.googleapis.com/css?family=Archivo|Just+Another+Hand');
+.aos-item{
+    transition: all 1s !important;
+}
+main{
+    margin-right: 82px;
+}
+.affilter {
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.65);
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+}
+body{
+    overflow-X: hidden;
+}
+.bordered{
+    border: 2px solid red;
+}
+.hide{
+    display: none;
+}
+.x1 {
+	font-size: 1rem;
+}
+
+
+.x15 {
+	font-size: 1.5rem;
+}
+
+.x2 {
+	font-size: 2rem;
+}
+
+.x25 {
+	font-size: 2.5rem;
+}
+
+.x3 {
+	font-size: 3rem;
+}
+
+.x35 {
+	font-size: 3.5rem;
+}
+
+.x4 {
+	font-size: 4rem;
+}
+
+.x45 {
+	font-size: 4.5rem;
+}
+
+.x5 {
+	font-size: 5rem;
+}
+
+.x55 {
+	font-size: 5.5rem;
+}
+.banner{
+    min-height: 100vh;
+}
+.banner .parallax-container{
+    height: 100vh;
+}
+footer .parallax-container{
+    height: auto;
+}
+.banner .parallax-container img{
+    filter: brightness(50%);
+}
+#sign_in .banner .new-sign{
+    margin-left: 30px;
+}
+#sign_in .banner h5{
+    margin-bottom: 30px;
+}
+footer .parallax-container img{
+    filter: brightness(50%);
+}
+.banner .main{
+    padding: 6vh 100px 0 100px;
+}
+.main{
+    color: white;
+    position: relative;    
+}
+.main h3{
+    position: absolute;
+    top: 75vh;
+}
+header .side-bar{
+    position: fixed;
+    z-index: 5;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    right: 0;
+    padding: 25px;
+    overflow: hidden;
+    max-width: 82px;
+    transition:all 750ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+header .side-bar:hover{
+    background-color: white;
+}
+header .side-bar.active{
+    padding: 40px;
+    max-width: 500px;
+}
+header .side-bar .more-icon-border.active{
+    transform: translateX(0);
+}
+header .nav{
+    margin-top: 100px;
+    transform: translateX(250px);
+    transition: transform 750ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+header .nav ul a{
+    color: #444444;
+    font-size: 30px;
+   
+}
+.main a{
+    display: inline-block;
+}
+header .nav ul a li,.main a{
+     transition: transform 750ms cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+header .nav ul a:hover li,.main a:hover{
+    transform: translateX(20px);
+}
+header .side-bar.active{
+    max-width: 500px;
+}
+header .side-bar.active .nav{
+    transform: translateX(0);
+}
+section.adv img{width: 100%;
+    box-shadow: 3px 3px 16px rgba(0, 0, 0, 0.15);
+}
+section.adv.col.s5{
+    transition: transform .4s ease-in;
+}
+.adv{
+    margin-top: 80px;
+}
+.more-icon-border{
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    padding:0 10px;
+    transition: all .3s ease-in;
+}
+.more-icon-border .menu-text{
+    margin-left: -11px
+}
+
+.more-icon-border:hover{    
+    cursor: pointer;
+    transform: translateY(-15px)
+}
+.mini-adv img{
+    filter: brightness(70%);
+}.mini-adv .col.m6 img{width: 100%}
+.mini-adv .col.m6{
+    position: relative;
+    overflow: hidden;
+    min-height: 400px;
+}
+.mini-adv .col.m6 a{
+    color: white;
+}
+.mini-adv .col.m6 .img{
+    position: absolute;
+    top: 5px;
+    right: 2.5px;
+    z-index: -1;
+    transition: all .3s ease-in-out;
+    filter: brightness(60%);
+    background-size: 100%;
+    width: 100%;
+    height: 100%;
+}
+.mini-adv .col.m6 .more-text{
+    transition: transform 750ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    transform: translateY(252px);
+}
+.mini-adv .col.m6:hover .img{
+    filter: brightness(40%);
+}
+.mini-adv .col.m6:hover .more-text{
+    transform: translateY(0);
+}
+.mini-adv .col.m6{
+    padding: 50px 60px 10px 50px;
+}
+.mini-adv .col.m6:nth-child(1) .img{
+    background-image: url('../img/womanmusic.jpg');
+}
+.mini-adv .col.m6:nth-child(2) .img{
+    background-image: url('../img/golfer.jpg');
+    right: 0;
+    left: 2.5px;
+}
+.interior .parallax img{
+    min-width: 70vh;
+}
+.interior{
+    position: relative;
+}
+.interior .caption{
+    padding: 50px;
+    position: absolute;
+    bottom: 0vh;
+}
+.card-panel.col.m6{
+    padding: 50px 20px;
+}
