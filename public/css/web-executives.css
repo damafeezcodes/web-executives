@@ -77,3 +77,17 @@ body {
 	right: 120px;
 	z-index: 3;
 }
+.what-we-do .col.s4{
+	text-align: center;
+}
+.what-we-do .col.s4 img{
+	max-width: 180px;
+	border-radius: 50%;
+	transition:transform 1s ease-in-out;
+	margin-top: 100px;
+	margin-bottom: 30px;
+}
+.what-we-do .col.s4 img:hover{
+	transform: rotate(360deg)
+}
+
