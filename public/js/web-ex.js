@@ -9,17 +9,35 @@ $(document).ready(function(){
         $('header .side-bar').removeClass('z-depth-2');
         
     });
-    var showcaseText = document.getElementsByClassName('showcase-text');
+    var showcaseText = $('.showcase-text');
     $(window).scroll(function(){
         var pos = $(window).scrollTop();
-        for(var i = 0; i<showcaseText.length; i++){
-            if(pos > showcaseText[i].offsetTop){
-                console.log(`div ${i} position: ${showcaseText[i].offsetTop}`);
+        showcaseText.each(function(){
+            var thisPosition = $(this).offset().top;
+            var angle;
+            if(pos < thisPosition - 320){
+                // alert();
+                angle = 100;
+            }else{
+                angle = 100 - (pos/(pos+100) * 100);
+                // angle = 0;
             }
-
-        }
-        console.log(`scrollpos: ${pos}`); 
+             $(this).css('transform','translateY(' + angle + 'px)');
+            //  $('.test').html(`I am ${thisPosition}, but Window is ${pos} and angle is ${angle}`)
+            //  console.log(angle);
+        });  
     });
+    
+    // $(window).scroll(function(){
+    //     var pos = $(window).scrollTop();
+    //     for(var i = 0; i<showcaseText.length; i++){
+    //         if(pos > showcaseText[i].offsetTop){
+    //             $('.test').html(`div ${i} position: ${showcaseText[i].offset().top}`);
+    //         }
+
+    //     }
+    //     console.log(`scrollpos: ${pos}`); 
+    // });
     // if(pos < 400){
     //     var bendRotateAngle = (- ((pos/400) * 25) + 25);
     //     $('.bend').css('transform', 'rotate(-' + bendRotateAngle + 'deg)');
