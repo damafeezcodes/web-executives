@@ -111,7 +111,6 @@ body {
 .others{
 	position: relative;
 	margin-top: 150px;
-	min-height: 2000px;
 }
 .others>div:not(.content){
 	position: absolute;
@@ -123,6 +122,9 @@ body {
 .others>div.content section>div.row{
 	padding-top: 200px;
 }
+.others>div.content section>div.row:not(:first-child){
+	padding-top: 120px;
+}
 .others>div.content img{
 	width:100%
 }
@@ -130,7 +132,7 @@ body {
 	font-size: 1.2rem;
 }
 .others>div.content .showcase-text{
-	transition:transform 750ms cubic-bezier(0.165, 0.84, 0.44, 1);
+	transition:transform 750ms cubic-bezier(0.165, 0.84, 0.44, 0.5);
 	/* transform: translateY(100px); */
 
 }
@@ -143,7 +145,7 @@ body {
 	width: 100%;
 }
 .others>div.first{
-	width: 70%;
+	width: 75%;
 	z-index: 2;
 	left: 0;
 	top: 0;
@@ -157,4 +159,10 @@ body {
 	z-index: 1;
 	top: 0;
 	background-color: #143439;
+}
+footer{
+	padding-top: 120px !important;
+}
+footer h5{
+    color: #1c4e79;
 }
